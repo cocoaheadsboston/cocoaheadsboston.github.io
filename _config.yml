@@ -1,14 +1,27 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: CocoaHeads Boston -- THIS IS NOT A LIVE SITE
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A meetup of Mac and iOS developers. We meet at 7:00 PM on the second Thursday of every month at MIT.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://cocoaheadsboston.github.io" # the base hostname & protocol for your site
+twitter_username: cocoaboston
+collections:
+  meetingnotes:
+    output: true
+    template: page
+    permalink: /meeting-notes/:title/
 
-# Build settings
-markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "meetingnotes"
+    values:
+      layout: "meetingnotes"
