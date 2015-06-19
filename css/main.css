@@ -169,11 +169,11 @@ span.locationlinks {
 
 span.locationlinks a {
 	display: inline-block;
-	margin-left: 10px;
+	margin-right: 10px;
 }
 
-span.locationlinks a:first-child {
-	margin-left: 0px;
+span.locationlinks a:last-child {
+	margin-right: 0px;
 }
 
 article p.entrydate {
