@@ -1,0 +1,204 @@
+html {
+	margin: 0px;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+	line-height: 1.4;
+	margin: 0px;
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+a, a:hover, a:active, a:focus {
+	color: #391F0D;
+}
+
+a:hover {
+	color: #777777;
+}
+
+p {
+	margin-bottom: 1.4em;
+}
+
+header {
+	padding: 0px;
+}
+
+h1 {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 28pt;
+}
+
+h1 a, h1 a:hover, h1 a:active, h1 a:focus {
+	text-decoration: none;
+	color: initial;
+	min-height: 47.5px;
+	vertical-align: middle;
+	color: #391F0D;
+}
+
+h1 a span {
+	display: inline-block;
+	height: 47.5px;
+	width: 47.5px;
+	background-size: 47.5px 47.5px;
+	background-image: url(/rsrcs/cocoaheads.png);
+	vertical-align: bottom;
+	margin-right: 10px;
+}
+
+h2 a {
+	text-decoration: none;
+}
+
+h2 a:hover {
+	text-decoration: underline;
+	color: initial;
+}
+
+@media only screen and (max-width: 600px)  {
+	h1 {
+		font-size: 15pt;
+	}
+	h1 a span {
+		height: 24px;
+		width: 24px;
+		background-size: 24px 24px;
+		background-image: url(/rsrcs/cocoaheads.png);
+	}
+}
+
+#navouter {
+	border-top: solid #391F0D 1px;
+	border-bottom: solid #391F0D 1px;
+	padding: 5px;
+	background-color: #391F0D;
+}
+
+#navmiddle {
+	width: 90%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navinner {
+    text-align: justify;
+}
+
+#navinner a {
+    display: inline-block;
+    position: relative;
+    top: 1.2em; /* your line-height */
+    color: #dddddd;
+}
+
+#navinner a:hover, #navinner a.current {
+    color: #ffffff;
+}
+
+#navinner:before{
+    content: '';
+    display: block;
+    width: 100%;
+    margin-bottom: -1.2em; /* your line-height */
+}
+
+#navinner:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px)  {
+	#navouter {
+		line-height: .9em;
+	}
+	#navinner a, #navinner a:active, #navinner a:hover, #navinner a:focus {
+	    font-size: .9em;
+    	top: .9em;
+	}
+	#navinner:before{
+		margin-bottom: -.9em;
+	}
+}
+
+
+div.page-content {
+	width: 90%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	padding: 20px;
+}
+
+footer p {
+	text-align: center;
+	margin: 0px;
+}
+
+footer p a {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: .9em;
+}
+
+@media only screen and (max-width: 600px)  {
+	footer p a {
+		font-size: .65em;
+	}
+}
+
+span.caption {
+	font-size: .78em;
+}
+
+span.locationlinks {
+	margin-top: 0px;
+}
+
+span.locationlinks a {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+span.locationlinks a:first-child {
+	margin-left: 0px;
+}
+
+article p.entrydate {
+	color: #999999;
+	margin-top: 0px;
+}
+
+article h2 {
+	margin-bottom: 0px;
+}
+
+article p {
+	margin-top: 1em;
+	margin-bottom: 0px;
+}
+
+article p:first-of-type {
+	margin-top: 0px;
+}
+
+div.meetingnotesmeta p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+div.wrapper *:last-child {
+	margin-bottom: 0px;
+}

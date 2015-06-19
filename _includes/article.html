@@ -1,0 +1,5 @@
+<article>
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	{{ post.content }}
+	<p class="entrydate">Posted on <span class="dateupdated">{{ post.date | date: '%B %e, %Y' }}</span></p>
+</article>

@@ -1,16 +1,14 @@
 ---
 layout: default
+ismeetingnotes: true
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">Meeting Notes for {{ page.long_date }}</h1>
-    {% if page.num_attendees %}<p>Number of attendees: {{ page.num_attendees }}</p>{% endif %}
-    {% if page.location %}<p>Location: {{ page.location }}</p>{% endif %}
-  </header>
+<h2>Meeting Notes for {{ page.long_date }}</h2>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div class="meetingnotesmeta">
+{% if page.num_attendees %}<p>Number of attendees: {{ page.num_attendees }}</p>{% endif %}
+{% if page.location %}<p>Location: {{ page.location }}</p>{% endif %}
 </div>
+
+{{ content }}
+

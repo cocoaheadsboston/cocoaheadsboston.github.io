@@ -1,0 +1,16 @@
+---
+layout: default
+ismeetingnotes: true
+---
+
+<h2>Meeting Notes</h2>
+
+<p>These are our meeting notes going back to April 2013.</p>
+
+<ul>
+	{% for meeting in site.meetingnotes reversed %}
+		<li>
+			<a href="{{ meeting.url }}">{{ meeting.title }}</a>
+		</li>
+	{% endfor %}
+</ul>
